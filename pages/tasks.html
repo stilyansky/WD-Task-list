@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title> Tasks Page </title>
+    <link href="https://fonts.googleapis.com/css?family=Lato::100,300,400i,400,700,900" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" type="text/css" href="../css/main.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <a href="../index.html"> <img src="../img/logo.png" alt="logo" title="Home"class="logo"> </a>
+    <nav class="menu">
+      <ul>
+        <li> <a href="../index.html">home</a> </li>
+        <li> <a href="tasks.html" class="current">tasks</a> </li>
+        <li><a href="about.html">about</a></li>
+      </ul>
+    </nav>
+    <header class="center">
+      <div class="header-images">
+        <img src="../img/notepad2.png" alt="header" class="notepad">
+        <img src="../img/todo.png" alt="todo" class="todo">
+      </div>
+    </header>
+      <form id="task-list" class="center" action="index.html" method="post">
+        <fieldset>
+          <legend>Tasks</legend>
+
+            <div id="full-task-content">
+              <label> Make a task list website </label>
+              <table>
+                <tr>
+                  <td class="divider-bottom"> assignes on 20 Oct </td>
+                </tr>
+                <tr id="inline">
+                    <td><div class="asignee-label">Asignee:</div></td>
+                    <td> <img src="../img/avatar.png" alt="avatar" title="Stilyan Rusev"class="asignee"></td>
+                    <td> <div class="due-date">Due Date:</div></td>
+                    <td> <div class="due" title="Deadline approaching">22 Oct</div></td>
+                </tr>
+                <tr>
+                  <td class="divider">Task Description:</td>
+                </tr>
+              <tr>
+                </div>
+                <td id="align-left"> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</td>
+              </tr>
+              <button type="button" name="New Task" title="Mark as Complete" class="complete" onclick="error()">✓</button>
+            </table>
+        </fieldset>
+      </form>
+      <footer class="center"> Copyright © 2018 WireDelta </footer>
+    </div>
+    <script src="../js/main.js"></script>
+  </body>
+</html>
