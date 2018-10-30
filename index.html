@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title> Task List Assignment </title>
+    <link href="https://fonts.googleapis.com/css?family=Lato::100,300,400i,400,700,900" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" type="text/css" href="css/main.css" />
+  </head>
+  <body>
+  <div class="wrapper">
+     <a href="index.html"> <img src="img/logo.png" alt="logo" title="Home" class="logo"> </a>
+  <nav class="menu center">
+    <ul>
+      <li> <a href="index.html" class="current">home</a> </li>
+      <li> <a href="pages/tasks.html">tasks</a> </li>
+      <li><a href="pages/about.html">about</a></li>
+    </ul>
+  </nav>
+  <header class="center">
+    <div class="header-images">
+      <img src="img/notepad2.png" alt="header" class="notepad">
+      <img src="img/todo.png" alt="todo" class="todo">
+    </div>
+  </header>
+    <form id="task-list" class="center" action="index.html" method="post">
+      <fieldset>
+        <legend>Task Assignments</legend>
+          <table class="table-list">
+            <tr>
+              <td id="align-left"> <a href="pages/tasks.html">Make a task list website </a> </td>
+            </tr>
+            <tr>
+              <td id="align-left"> <a href="pages/tasks.html">Design the layout of the webpage</a> </td>
+            </tr>
+            <tr>
+              <td id="align-left"> <a href="pages/tasks.html">Adjustment and fine tuning </a> </td>
+            </tr>
+            <tr>
+              <td id="align-left"> <a href="pages/tasks.html">Cross browser testing and bug fixes</a> </td>
+            </tr>
+
+            <button type="button" name="New Task" title="Add a New Task" onclick="error()">+</button>
+          </table>
+      </fieldset>
+    </form>
+    <footer class="center"> Copyright © 2018 WireDelta </footer>
+  </div>
+
+  <script src="js/main.js"></script>
+  </body>
+</html>
