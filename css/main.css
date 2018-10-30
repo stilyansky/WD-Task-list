@@ -179,6 +179,7 @@ button{
   padding-right: 1px;
   padding-bottom: 1px;
   outline:none;
+  border: none;
 }
 
 button:hover {
@@ -274,4 +275,9 @@ footer{
 
 a{
   text-decoration: none;
+  color:#000;
+}
+
+a:visited {
+  color:#000;
 }
