@@ -1,8 +1,10 @@
+/*********************  Reset some of the default browser settings *********************/
 *{
   margin: 0;
   padding: 0;
 }
 
+/*********************  GENERAL STYLES and STYLES OF HOME PAGE *********************/
 html{
   font-size: 10px;
   font-family: 'Lato', sans-serif;
@@ -18,6 +20,9 @@ body {
   font-size: 1.5rem;
 }
 
+header{
+  position: absolute;
+}
 
 legend {
   background-color: #0093f9;
@@ -28,8 +33,6 @@ legend {
   text-align: center;
   text-transform: uppercase;
   padding: 0.8rem 0rem 0.8rem 0rem;
-  /* border-radius: 40px; */
-  /* border: solid #dbdbdb 1px; */
   width: 105%;
   box-shadow: 0px 4px 5px #c6c6c6;
 }
@@ -47,55 +50,6 @@ fieldset{
   transform: translate(-50%, 0);
 }
 
-header{
-  position: absolute;
-}
-
-#task-list{
-  position: absolute;
-  top: 27rem;
-  /* left: 50%;
-  transform: translate(-50%, 0); */
-  min-width: 60rem;
-  max-width: 60rem;
-}
-
-.table-list tr:nth-child(odd) {
-  background-color: #f6f6f7;
-  /* max-width: 100rem; */
-}
-
-.header-images img{
-  display: block;
-}
-
-.notepad{
-  /* border-top: solid #0093f9 0.3rem; */
-  position: absolute;
-  z-index: 1;
-}
-
-.todo{
-  position: relative;
-  top: 1rem;
-  z-index: 0;
-  transition:1s;
-}
-
-.header-images:hover > .todo{
-  transition:1s;
-  transform: translateY(5rem);
-}
-
-.table-list {
-  padding: 2rem 2rem 1rem 2rem;
-  font-size: 2rem;
-}
-
-.table-list a:hover{
-  font-weight: 400;
-  font-style: italic;
-}
 
 .menu li{
   display:inline-block;
@@ -130,6 +84,14 @@ header{
   transform: translate(-35rem, 1.5rem);
 }
 
+.logo:hover{
+  filter: brightness(10%);
+}
+
+.logo-small {
+  display:none;
+}
+
 .menu a:hover{
   border: solid rgba(247, 247, 247, 0.15) 1px;
   background-color: rgba(247, 247, 247, 0.25);
@@ -154,8 +116,14 @@ nav{
   z-index: 1;
 }
 
+#task-list{
+  position: absolute;
+  top: 27rem;
+  min-width: 60rem;
+  max-width: 60rem;
+}
+
 table{
-  /* border: solid black 2px; */
   display: inline-table;
   width: 100%;
 }
@@ -192,18 +160,53 @@ button:hover {
   background-color: #70de6a;
 }
 
-/* TASKS PAGE STYLES */
+.table-list tr:nth-child(odd) {
+  background-color: #f6f6f7;
+}
+
+.header-images img{
+  display: block;
+}
+
+.notepad{
+  position: absolute;
+  z-index: 1;
+}
+
+.todo{
+  position: relative;
+  top: 1rem;
+  z-index: 0;
+  transition:1s;
+}
+
+.header-images:hover > .todo{
+  transition:1s;
+  transform: translateY(5rem);
+}
+
+.table-list {
+  padding: 2rem 2rem 1rem 2rem;
+  font-size: 2rem;
+}
+
+.table-list a:hover{
+  font-weight: 400;
+  font-style: italic;
+}
+
+/*********************  TASK PAGE STYLES *********************/
+label{
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+
 #full-task-content td{
   text-align: center;
 }
 
 #full-task-content{
   margin: 2rem;
-}
-
-label{
-  font-size: 1.8rem;
-  font-weight: 700;
 }
 
 #inline{
@@ -268,9 +271,10 @@ td#align-left{
 
 footer{
   position: absolute;
+  text-align: center;
   bottom: 2rem;
   font-size: 1.3rem;
-  color: #525252
+  color: #525252;
 }
 
 a{
@@ -280,4 +284,131 @@ a{
 
 a:visited {
   color:#000;
+}
+
+
+/*********************  RESPONSIVE STYLES *********************/
+
+@media (max-width: 736px) {
+
+  legend {
+    font-size: 1.5rem;
+  }
+
+  .current{
+    padding: 0.3rem 1.2rem 0.3rem 1.2rem;
+  }
+
+  .menu li{
+    margin-right: 2rem;
+    margin-left: 2rem;
+
+  }
+
+  .logo{
+    width: 8rem;
+    transform: translate(-25.6rem, 1.2rem);
+  }
+
+  nav{
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+    font-size: 1.3rem;
+  }
+
+  #task-list{
+    top: 20.5rem;
+    min-width: 45rem;
+  }
+
+  button{
+    width: 3rem;
+    height: 3rem;
+    font-size: 1.3rem;
+  }
+
+  .header-images img{
+    width: 40rem;
+  }
+
+  .table-list {
+    padding: 2rem 2rem 1rem 2rem;
+    font-size: 1.8rem;
+  }
+}
+
+@media (max-width: 520px){
+
+  legend {
+    font-size: 1.5rem;
+  }
+
+  .current{
+    padding: 0.1rem 1rem 0.1rem 1rem;
+  }
+
+  .menu a:hover{
+    padding: 0.1rem 1rem 0.1rem 1rem;
+  }
+
+  .menu li{
+    margin: 0.5rem 0.5rem;
+    /* transform: translate(5rem, 0rem); */
+
+  }
+
+  .logo{
+    display: none;
+  }
+
+  .logo-small{
+    display:block;
+    position: absolute;
+    z-index: 2;
+    width: 2.5rem;
+    left: 50%;
+    transform: translate(-13.5rem, 1.7rem);
+  }
+
+
+  nav{
+    display: block;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+    font-size: 1.3rem;
+  }
+
+  #task-list{
+    top: 15rem;
+    min-width: 25rem;
+  }
+
+  .todo{
+    top: 1.2rem;
+  }
+  .header-images:hover > .todo{
+    transform: translateY(3rem);
+  }
+
+  button{
+    width: 3rem;
+    height: 3rem;
+    font-size: 1.3rem;
+  }
+
+  .header-images img{
+    width: 28rem;
+  }
+
+  .table-list {
+    padding: 2rem 2rem 1rem 2rem;
+    font-size: 1.8rem;
+  }
+}
+
+
+footer{
+  text-align: center;
+  padding: 1rem 0;
+  font-size: 1rem;
 }

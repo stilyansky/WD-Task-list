@@ -7,8 +7,13 @@
     <link rel="stylesheet" type="text/css" href="css/main.css" />
   </head>
   <body>
-  <div class="wrapper">
-     <a href="index.html"> <img src="img/logo.png" alt="logo" title="Home" class="logo"> </a>
+  <div id="wrapper">
+    <!-- Logo -->
+     <a href="index.html">
+       <img src="img/logo.png" alt="logo" title="Home" class="logo">
+       <img src="img/logo-small.png" alt="logo" title="Home" class="logo-small">
+     </a>
+     <!--  Navigation menu-->
   <nav class="menu center">
     <ul>
       <li> <a href="index.html" class="current">home</a> </li>
@@ -16,12 +21,14 @@
       <li><a href="pages/about.html">about</a></li>
     </ul>
   </nav>
+  <!-- Header images - notepad + TO DO  -->
   <header class="center">
     <div class="header-images">
       <img src="img/notepad2.png" alt="header" class="notepad">
       <img src="img/todo.png" alt="todo" class="todo">
     </div>
   </header>
+  <!--  Task list content-->
     <form id="task-list" class="center" action="index.html" method="post">
       <fieldset>
         <legend>Task Assignments</legend>
@@ -43,9 +50,11 @@
           </table>
       </fieldset>
     </form>
-    <footer class="center"> Copyright © 2018 WireDelta </footer>
+    <!--  Footer -->
+    <footer class="center">Copyright © 2018 WireDelta All Rights Reserved.</footer>
   </div>
 
+  <!--  Javascript -->
   <script src="js/main.js"></script>
   </body>
 </html>
