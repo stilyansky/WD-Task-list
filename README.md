@@ -5,7 +5,7 @@ WireDelta - Assignment 1 - Task List
 
 ## Project Description
 
-###Assignment specifications:
+### Assignment specifications:
 "Build a task list website using HTML and CSS. You are to design a website that presents a set of tasks to its users. An example of a task is ‘do the shopping’. The website should be implemented using static content for the tasks, i.e. it does not need to be data driven as that is covered in later modules."
 
 
@@ -65,7 +65,7 @@ The code is structured as follows:
 
 ### JavaScript
 
-There is only a small error message to be displayed if the user clicks on the "Add task" and "Mark task as complete" buttons on the pages. 
+There is only a small error message to be displayed if the user clicks on the "Add task" and "Mark task as complete" buttons on the pages.
 
 ## Authors
 
